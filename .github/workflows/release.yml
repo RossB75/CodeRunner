@@ -22,8 +22,8 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  WORKSPACE_IMAGE: ghcr.io/${{ github.repository_owner }}/coderunner-workspace
-  CONTROL_IMAGE: ghcr.io/${{ github.repository_owner }}/coderunner-control
+  WORKSPACE_IMAGE: ghcr.io/rossb75/coderunner-workspace
+  CONTROL_IMAGE: ghcr.io/rossb75/coderunner-control
   # Pinned PathPlanner web release (mathewdunne/pathplanner-web). Both control
   # builds must resolve the same artifact, and a pinned tag makes a failed
   # download fatal instead of silently shipping an empty dist — see the
